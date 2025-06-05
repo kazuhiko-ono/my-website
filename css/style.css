@@ -190,7 +190,8 @@ body {
 }
 
 .hero-video {
-    max-height: 500px;
+    max-height: 538px;
+    min-height: 400px;
     object-fit: cover;
 }
 
