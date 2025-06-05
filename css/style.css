@@ -12,8 +12,8 @@ html {
 }
 
 body {
-    font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
+    font-family: 'Noto Sans JP', 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.7;
     color: #1F2937;
     background-color: #FFFFFF;
 }
@@ -137,13 +137,25 @@ body {
     transition: 0.3s;
 }
 
-/* ヒーローセクション */
+/* ヒーローセクション - manaolapule風の温かいグラデーション */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding-top: 80px;
-    background: linear-gradient(135deg, #F8FAFC 0%, #E0E7FF 100%);
+    background: linear-gradient(135deg, 
+        rgba(134, 239, 172, 0.3) 0%, 
+        rgba(96, 165, 250, 0.3) 25%, 
+        rgba(249, 168, 212, 0.3) 50%, 
+        rgba(134, 239, 172, 0.3) 75%, 
+        rgba(96, 165, 250, 0.3) 100%);
+    background-size: 300% 300%;
+    animation: gentleGradient 8s ease-in-out infinite;
+}
+
+@keyframes gentleGradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
 }
 
 .hero-content {
