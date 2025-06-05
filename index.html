@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学びのセミナー・個人相談 | 学習支援パートナー</title>
+    <meta name="description" content="ビジネスパーソン・経営者向けの実践的セミナーと個人相談サービス。あなたの成長を専門的にサポートします。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 1. ヘッダー -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>学習支援パートナー</h1>
+                </div>
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#services">サービス</a></li>
+                        <li><a href="#features">特徴</a></li>
+                        <li><a href="#testimonials">お客様の声</a></li>
+                        <li><a href="#about">講師紹介</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                <a href="#contact" class="cta-button header-cta">お問い合わせ</a>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. ヒーローセクション -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">学びで未来を変える<br>あなたの成長パートナー</h2>
+                    <p class="hero-subtitle">実践的なセミナーと個別サポートで、ビジネスパーソンの継続的な成長を支援します</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="cta-button primary">セミナーに申し込む</a>
+                        <a href="#contact" class="cta-button secondary">個人相談を予約</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop&crop=center" alt="学習支援のイメージ" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display:none; width:100%; height:400px; background:linear-gradient(135deg, #60A5FA, #86EFAC); border-radius:12px; align-items:center; justify-content:center; color:white; font-size:1.2rem;">
+                        学習支援のイメージ
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. サービス概要 -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">サービス概要</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/seminar-icon.svg" alt="セミナーアイコン">
+                    </div>
+                    <h3>実践的セミナー</h3>
+                    <p>最新のビジネススキルを学べる実践重視のセミナーを定期開催。同じ志を持つ仲間との交流も魅力です。</p>
+                    <ul class="service-features">
+                        <li>月2回の定期開催</li>
+                        <li>少人数制（最大20名）</li>
+                        <li>実践ワーク中心</li>
+                        <li>資料・動画見放題</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/consultation-icon.svg" alt="個人相談アイコン">
+                    </div>
+                    <h3>個人相談サービス</h3>
+                    <p>あなただけのオーダーメイド相談。課題に合わせた個別アドバイスで確実な成長をサポートします。</p>
+                    <ul class="service-features">
+                        <li>完全マンツーマン</li>
+                        <li>60分間の集中相談</li>
+                        <li>フォローアップ付き</li>
+                        <li>オンライン対応可</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-combination">
+                <h3>セミナー + 個人相談で最大効果</h3>
+                <p>セミナーで基礎を学び、個人相談で具体的な課題解決。この組み合わせが最も効果的な学習体験を提供します。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 3つの特徴 -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">選ばれる3つの理由</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/practical-icon.svg" alt="実践的な学び">
+                    </div>
+                    <h3>実践的な学び</h3>
+                    <p>理論だけでなく、すぐに現場で活用できる実践的なスキルとノウハウを重視したカリキュラムです。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/support-icon.svg" alt="個別サポート">
+                    </div>
+                    <h3>個別サポート</h3>
+                    <p>一人ひとりの課題や目標に合わせたきめ細かいサポート。あなたのペースで確実に成長できます。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/growth-icon.svg" alt="継続的な成長">
+                    </div>
+                    <h3>継続的な成長</h3>
+                    <p>一度きりの学習ではなく、継続的な成長をサポート。長期的な視点であなたの発展を支援します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. サービス詳細 -->
+    <section class="service-details" id="service-details">
+        <div class="container">
+            <h2 class="section-title">サービス詳細</h2>
+            <div class="details-grid">
+                <div class="detail-section">
+                    <h3>セミナー詳細</h3>
+                    <div class="detail-content">
+                        <h4>開催スケジュール</h4>
+                        <p>毎月第2・第4土曜日 14:00-17:00（3時間）</p>
+                        
+                        <h4>主な内容</h4>
+                        <ul>
+                            <li>リーダーシップ強化</li>
+                            <li>コミュニケーション術</li>
+                            <li>問題解決手法</li>
+                            <li>チームマネジメント</li>
+                        </ul>
+                        
+                        <h4>参加方法</h4>
+                        <p>オンライン・オフライン選択可能<br>
+                        会場：東京都渋谷区（詳細は申込後にご案内）</p>
+                    </div>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>個人相談詳細</h3>
+                    <div class="detail-content">
+                        <h4>相談の流れ</h4>
+                        <ol>
+                            <li>事前ヒアリング（15分）</li>
+                            <li>本相談（60分）</li>
+                            <li>アクションプラン作成</li>
+                            <li>フォローアップ（1週間後）</li>
+                        </ol>
+                        
+                        <h4>料金</h4>
+                        <p>初回：¥15,000（税込）<br>
+                        2回目以降：¥20,000（税込）</p>
+                        
+                        <h4>予約方法</h4>
+                        <p>完全予約制・オンライン対応可<br>
+                        平日・土日祝日対応（10:00-20:00）</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-flow">
+                <h3>申し込みまでの流れ</h3>
+                <div class="flow-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>お問い合わせ</h4>
+                        <p>フォームまたは電話でご連絡</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>詳細ヒアリング</h4>
+                        <p>ご要望や課題をお聞きします</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>プラン提案</h4>
+                        <p>最適なサービスをご提案</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>開始</h4>
+                        <p>セミナー参加・相談開始</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. お客様の声 -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">お客様の声</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"セミナーで学んだコミュニケーション術を実践したところ、チームの生産性が30%向上しました。個人相談でのフォローアップも的確で、継続的な成長を実感しています。"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=120&h=120&fit=crop&crop=face" alt="田中様" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display:none; width:60px; height:60px; background:#60A5FA; border-radius:50%; align-items:center; justify-content:center; color:white; font-weight:bold;">田</div>
+                        <div class="author-info">
+                            <h4>田中 洋子様</h4>
+                            <p>IT企業 マネージャー</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"起業準備中の悩みを個人相談で解決できました。具体的なアドバイスのおかげで、3ヶ月後に無事会社を設立。今も定期的に相談させていただいています。"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=face" alt="佐藤様" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display:none; width:60px; height:60px; background:#86EFAC; border-radius:50%; align-items:center; justify-content:center; color:white; font-weight:bold;">佐</div>
+                        <div class="author-info">
+                            <h4>佐藤 健一様</h4>
+                            <p>起業家・代表取締役</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"セミナーでの学びが日々の営業活動に直結しています。参加者同士のネットワークも貴重で、新しいビジネスチャンスにもつながりました。"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&h=120&fit=crop&crop=face" alt="山田様" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display:none; width:60px; height:60px; background:#F9A8D4; border-radius:50%; align-items:center; justify-content:center; color:white; font-weight:bold;">山</div>
+                        <div class="author-info">
+                            <h4>山田 美智子様</h4>
+                            <p>不動産会社 営業部長</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. 講師・会社紹介 -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">講師・会社紹介</h2>
+            <div class="about-content">
+                <div class="instructor-profile">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=400&fit=crop&crop=face" alt="代表講師 高橋明子" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display:none; width:300px; height:400px; background:linear-gradient(135deg, #2563EB, #60A5FA); border-radius:12px; align-items:center; justify-content:center; color:white; font-size:1.5rem; font-weight:bold;">
+                        高橋 明子<br>代表講師
+                    </div>
+                    <div class="profile-text">
+                        <h3>代表講師　高橋 明子</h3>
+                        <div class="credentials">
+                            <h4>経歴・実績</h4>
+                            <ul>
+                                <li>大手コンサルティング会社で15年のキャリア</li>
+                                <li>500社以上の企業支援実績</li>
+                                <li>国際コーチング連盟認定プロフェッショナルコーチ</li>
+                                <li>ビジネススクール講師として累計1000名以上を指導</li>
+                            </ul>
+                        </div>
+                        <div class="message">
+                            <h4>メッセージ</h4>
+                            <p>一人ひとりが持つ可能性を最大限に引き出すことが私の使命です。理論と実践のバランスを大切にしながら、皆様の成長に寄り添い続けます。学びを通じて、より豊かで充実した人生を歩んでいきましょう。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="company-info">
+                    <h3>会社理念</h3>
+                    <p>「学びを通じて、一人ひとりの可能性を最大化し、より良い社会の実現に貢献する」</p>
+                    
+                    <h3>サービスへの想い</h3>
+                    <p>急速に変化するビジネス環境の中で、継続的な学習と成長は不可欠です。私たちは、質の高い学習機会と個別サポートを通じて、皆様の成功をサポートいたします。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. よくある質問 -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">よくある質問</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>セミナーの参加費用はいくらですか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>1回のセミナー参加費は8,000円（税込）です。月2回の定期参加をご希望の場合は、月額15,000円のお得なプランもございます。初回は無料体験も可能です。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>オンラインでの参加は可能ですか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>はい、セミナー・個人相談ともにオンライン対応しております。Zoomを使用し、対面と同等の質の高いサービスを提供いたします。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>初心者でも参加できますか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>もちろんです。参加者のレベルに合わせてサポートいたします。基礎から丁寧に説明し、わからない点は個別にフォローしますので安心してご参加ください。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>キャンセルや変更は可能ですか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>セミナーは開催日の3日前まで、個人相談は24時間前までキャンセル・変更が可能です。それ以降のキャンセルは料金が発生する場合がございます。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>どのような業種の方が参加されていますか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>IT、金融、製造業、サービス業など多岐にわたります。経営者、管理職、営業職、起業準備中の方など、様々な立場の方にご参加いただいております。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>効果を実感できるまでの期間はどのくらいですか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>個人差はありますが、多くの方が1-2ヶ月で変化を実感されています。継続的に参加いただくことで、より大きな成果を得られます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. お問い合わせ・申し込み -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">お問い合わせ・申し込み</h2>
+            <div class="contact-content">
+                <div class="contact-forms">
+                    <div class="form-section">
+                        <h3>セミナー申し込み</h3>
+                        <form class="contact-form" id="seminar-form">
+                            <div class="form-group">
+                                <label for="seminar-name">お名前 *</label>
+                                <input type="text" id="seminar-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="seminar-email">メールアドレス *</label>
+                                <input type="email" id="seminar-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="seminar-phone">電話番号</label>
+                                <input type="tel" id="seminar-phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="seminar-date">希望日程</label>
+                                <select id="seminar-date" name="date">
+                                    <option value="">選択してください</option>
+                                    <option value="2024-01-13">1月13日（土）14:00-17:00</option>
+                                    <option value="2024-01-27">1月27日（土）14:00-17:00</option>
+                                    <option value="2024-02-10">2月10日（土）14:00-17:00</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="seminar-participation">参加方法</label>
+                                <select id="seminar-participation" name="participation">
+                                    <option value="online">オンライン</option>
+                                    <option value="offline">会場参加</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="seminar-message">その他ご要望</label>
+                                <textarea id="seminar-message" name="message" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">セミナーに申し込む</button>
+                        </form>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>個人相談予約</h3>
+                        <form class="contact-form" id="consultation-form">
+                            <div class="form-group">
+                                <label for="consultation-name">お名前 *</label>
+                                <input type="text" id="consultation-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="consultation-email">メールアドレス *</label>
+                                <input type="email" id="consultation-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="consultation-phone">電話番号 *</label>
+                                <input type="tel" id="consultation-phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="consultation-date">希望日時</label>
+                                <input type="datetime-local" id="consultation-date" name="date">
+                            </div>
+                            <div class="form-group">
+                                <label for="consultation-type">相談方法</label>
+                                <select id="consultation-type" name="type">
+                                    <option value="online">オンライン</option>
+                                    <option value="offline">対面</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="consultation-topic">相談内容 *</label>
+                                <textarea id="consultation-topic" name="topic" rows="4" required placeholder="どのようなことでお悩みか、簡潔にお聞かせください"></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">個人相談を予約</button>
+                        </form>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>一般お問い合わせ</h3>
+                        <form class="contact-form" id="general-form">
+                            <div class="form-group">
+                                <label for="general-name">お名前 *</label>
+                                <input type="text" id="general-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="general-email">メールアドレス *</label>
+                                <input type="email" id="general-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="general-subject">件名</label>
+                                <input type="text" id="general-subject" name="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="general-message">お問い合わせ内容 *</label>
+                                <textarea id="general-message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">送信する</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>お電話でのお問い合わせ</h3>
+                    <div class="phone-info">
+                        <p class="phone-number">03-1234-5678</p>
+                        <p class="business-hours">営業時間：平日 10:00-18:00<br>土日祝日 10:00-17:00</p>
+                    </div>
+                    
+                    <div class="office-info">
+                        <h4>所在地</h4>
+                        <p>〒150-0001<br>
+                        東京都渋谷区神宮前1-2-3<br>
+                        学習支援ビル 5F</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>学習支援パートナー</h3>
+                    <p>学びを通じて、一人ひとりの可能性を最大化し、より良い社会の実現に貢献いたします。</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>サービス</h4>
+                    <ul>
+                        <li><a href="#services">実践的セミナー</a></li>
+                        <li><a href="#services">個人相談サービス</a></li>
+                        <li><a href="#about">講師紹介</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>会社情報</h4>
+                    <ul>
+                        <li><a href="#about">会社概要</a></li>
+                        <li><a href="#contact">アクセス</a></li>
+                        <li><a href="#" onclick="openModal('privacy')">プライバシーポリシー</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>外部リンク</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">学びのブログ</a></li>
+                        <li><a href="#" target="_blank">Facebook</a></li>
+                        <li><a href="#" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 学習支援パートナー. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- プライバシーポリシーモーダル -->
+    <div class="modal" id="privacy-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('privacy')">&times;</span>
+            <h2>プライバシーポリシー</h2>
+            <div class="modal-body">
+                <p>学習支援パートナー（以下「当社」）は、個人情報の保護に関する法律等を遵守し、お客様の個人情報を適切に取り扱います。</p>
+                <h3>1. 個人情報の収集について</h3>
+                <p>当社では、サービス提供のために必要な範囲内で個人情報を収集いたします。</p>
+                <h3>2. 個人情報の利用目的</h3>
+                <p>収集した個人情報は、以下の目的で利用いたします：</p>
+                <ul>
+                    <li>サービスの提供及び運営</li>
+                    <li>お客様からの問い合わせへの対応</li>
+                    <li>サービス向上のための分析</li>
+                </ul>
+                <h3>3. 個人情報の第三者提供</h3>
+                <p>当社は、法令に基づく場合を除き、お客様の同意なく個人情報を第三者に提供することはありません。</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
