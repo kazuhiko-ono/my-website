@@ -186,11 +186,76 @@ body {
     flex-wrap: wrap;
 }
 
-.hero-visual img {
+/* ヒーローセクションの画像・動画 */
+.hero-visual {
+    position: relative;
+}
+
+.hero-visual img,
+.hero-video {
     width: 100%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.hero-video {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* 動画制御ボタン */
+.video-controls {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hero-visual:hover .video-controls {
+    opacity: 1;
+}
+
+.video-btn {
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.video-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.video-btn span {
+    font-size: 1.2rem;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .video-controls {
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    .video-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .video-btn span {
+        font-size: 1rem;
+    }
 }
 
 /* サービス概要セクション */

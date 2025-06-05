@@ -425,5 +425,62 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // ヒーロー動画制御機能
+    const heroVideo = document.getElementById('hero-video');
+    const heroFallback = document.getElementById('hero-fallback');
+    const playPauseBtn = document.getElementById('play-pause-btn');
+    const muteBtn = document.getElementById('mute-btn');
+    const playIcon = document.querySelector('.play-icon');
+    const muteIcon = document.querySelector('.mute-icon');
+    
+    if (heroVideo) {
+        // 動画読み込みエラー時のフォールバック
+        heroVideo.addEventListener('error', function() {
+            console.log('動画の読み込みに失敗しました。画像を表示します。');
+            heroVideo.style.display = 'none';
+            heroFallback.style.display = 'block';
+        });
+        
+        // 再生/一時停止ボタン
+        if (playPauseBtn) {
+            playPauseBtn.addEventListener('click', function() {
+                if (heroVideo.paused) {
+                    heroVideo.play();
+                    playIcon.textContent = '⏸️';
+                } else {
+                    heroVideo.pause();
+                    playIcon.textContent = '▶️';
+                }
+            });
+        }
+        
+        // ミュート/ミュート解除ボタン
+        if (muteBtn) {
+            muteBtn.addEventListener('click', function() {
+                if (heroVideo.muted) {
+                    heroVideo.muted = false;
+                    muteIcon.textContent = '🔊';
+                } else {
+                    heroVideo.muted = true;
+                    muteIcon.textContent = '🔇';
+                }
+            });
+        }
+        
+        // 動画のパフォーマンス最適化
+        heroVideo.addEventListener('canplay', function() {
+            console.log('ヒーロー動画の読み込み完了');
+        });
+        
+        // 動画の自動再生が失敗した場合の処理
+        const playPromise = heroVideo.play();
+        if (playPromise !== undefined) {
+            playPromise.catch(error => {
+                console.log('自動再生が失敗しました:', error);
+                playIcon.textContent = '▶️';
+            });
+        }
+    }
+    
     console.log('学習支援パートナー Webサイト - JavaScript初期化完了');
 });
