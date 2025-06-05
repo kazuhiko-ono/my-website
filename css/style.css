@@ -143,7 +143,9 @@ body {
     display: flex;
     align-items: center;
     padding-top: 80px;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    background: #FFFFFF !important;
 }
 
 .hero-content {
